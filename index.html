@@ -9,25 +9,24 @@
   </head>
   <body>
     <div class="jumbotron">
-        <h1 class="display-3">Blogger's Paradise!</h1>
-        <hr class="my-6">
-        <p class="lead">Blogging Mania!</p>
-        <p class="lead">
-          <a id="create-post" class="btn btn-primary btn-lg" href="#/posts" role="button">New Post</a>
-        </p>
-      </div>  
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <section class="alert alert-danger text-center">Fields are missing: </section>
-          </div>
-        </div> 
-        <div class="row">
-          <div id="sidebar" class="col-4">
-            <ul class="list-group">
-            </ul>
-          </div>          
-        </div>  
+      <h1 class="display-3">Blogger's Paradise!</h1>
+      <hr class="my-6">
+      <p class="lead">Blogging Mania!</p>
+      <p class="lead">
+        <a id="create-post" class="btn btn-primary btn-lg" href="#/posts" role="button">New Post</a>
+      </p>
+    </div>  
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <!-- <section class="alert alert-danger text-center">Fields are missing: </section> -->
+        </div>
+      </div> 
+      <div class="row">
+        <div id="sidebar" class="col-4">
+          <ul class="list-group">
+          </ul>
+        </div>        
         <div id="view" class="col-8">
           <form id="post-form">
             <div class="form-group">
@@ -41,34 +40,36 @@
             <button id="post-button" type="submit" class="btn btn-info btn-large">Create New Post</button>
           </form>
           <form id="update-form">
-              <div class="form-group">
-                <label for="title">Title</label>
-                <input type="text" class="form-control" id="update-title" value="">
-              </div>
-              <div class="form-group">
-                <label for="title">Content</label>
-                <textarea type="text" rows="6" class="form-control" id="update-content"></textarea>
-              </div>
-              <button id="update-button" type="submit" class="btn btn-info btn-large">Update Post</button>
-            </form>   
+            <div class="form-group">
+              <label for="title">Title</label>
+              <input type="text" class="form-control" id="update-title" value="">
+            </div>
+            <div class="form-group">
+              <label for="title">Content</label>
+              <textarea type="text" rows="6" class="form-control" id="update-content"></textarea>
+            </div>
+            <button id="update-button" type="submit" class="btn btn-info btn-large">Update Post</button>
+          </form>   
             
-            <section id="blog" class="list-group-item">
-              <header>
-                <h2 id="blog-title" ></h2>
-                <hr>
-              </header>
-              <article><p id="blog-content"></p></article>
-              <aside class="my-4">
-                <ul class="nav justify-content-end">
-                  <li class="nav-item">
-                    <a class="nav-link" id="edit-post" href="">Edit</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-danger" id="delete-post" href="">Delete</a>
-                  </li>
-                </ul>
-              </aside>
-            </section>            
-        </div>        
-      </div>              
+          <section id="blog" class="list-group-item">
+            <header>
+              <h2 id="blog-title" ></h2>
+              <hr>
+            </header>
+            <article><p id="blog-content"></p></article>
+            <aside class="my-6">
+              <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link" id="edit-post" href="">Edit</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-danger" id="delete-post" href="">Delete</a>
+                </li>
+              </ul>
+            </aside>
+          </section>
+        </div>     
+      </div>        
+    </div>
+    <!-- script entries go here -->
   </body>
